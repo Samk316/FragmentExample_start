@@ -16,19 +16,17 @@
 
 package com.example.android.fragmentexample1;
 
-import android.content.Intent;
+
+import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-
 
 public class MainActivity extends AppCompatActivity {
 
     private Button mButton;
-    private Button nextButton;
     private boolean isFragmentDisplayed = false;
 
     // Saved instance state key.
@@ -59,13 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     closeFragment();
                 }
-            }
-        });
-        nextButton = (Button) findViewById(R.id.next_button);
-        nextButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this, SecondActivity.class));
             }
         });
     }

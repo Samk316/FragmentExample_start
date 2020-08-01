@@ -8,13 +8,12 @@ import android.view.ViewGroup;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.example.android.fragmentexample1.R;
-
 /**
- * A simple {@link Fragment} subclass.
- * create an instance of this fragment.
+ * A simple {@link Fragment} subclass that shows a question
+ * with radio buttons for providing feedback. If the user
+ * clicks "Yes" the text header changes to "Article: Like".
+ * If the user clicks "No" the text header changes to "Thanks".
  */
-
 public class SimpleFragment extends Fragment {
 
     // The radio button choice has 3 states: 0 = yes, 1 = no,
